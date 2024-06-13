@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- Created with Cambalache 0.90.2 -->
+<interface>
+  <!-- interface-name ui_file.ui -->
+  <requires lib="gtk" version="4.12"/>
+  <template class="window" parent="GtkApplicationWindow">
+    <property name="default-height">120</property>
+    <property name="default-width">350</property>
+    <property name="title">pyt_gtk4_dropdown</property>
+    <child>
+      <object class="GtkBox">
+        <property name="margin-bottom">20</property>
+        <property name="margin-end">20</property>
+        <property name="margin-start">20</property>
+        <property name="margin-top">20</property>
+        <child>
+          <object class="GtkLabel">
+            <property name="label">選択肢を
+Gtk.StringListで作成</property>
+            <property name="width-request">150</property>
+            <property name="xalign">0.0</property>
+          </object>
+        </child>
+        <child>
+          <object class="GtkDropDown">
+            <property name="hexpand">True</property>
+            <property name="model">
+              <object class="GtkStringList">
+                <items>
+                  <item>項目1</item>
+                  <item>項目2</item>
+                  <item>項目3</item>
+                  <item>項目4</item>
+                </items>
+              </object>
+            </property>
+            <signal name="notify::selected" handler="on_selected"/>
+          </object>
+        </child>
+      </object>
+    </child>
+  </template>
+</interface>

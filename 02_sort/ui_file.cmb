@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<!DOCTYPE cambalache-project SYSTEM "cambalache-project.dtd">
+<cambalache-project version="0.17.3" target_tk="gtk-4.0">
+  <ui>
+	(1,1,"ui_file.ui","ui_file.ui",None,None,None,None,None,None,None)
+  </ui>
+  <ui_library>
+	(1,"gtk","4.12",None)
+  </ui_library>
+  <object>
+	(1,1,"GtkApplicationWindow","window",None,None,None,None,-1,None,None),
+	(1,8,"GtkGrid",None,1,None,None,None,-1,None,None),
+	(1,9,"GtkLabel",None,8,None,None,None,None,None,None),
+	(1,10,"GtkDropDown",None,8,None,None,None,1,None,None),
+	(1,11,"GtkSortListModel","smodel",10,None,None,None,None,None,None),
+	(1,12,"GtkStringList","model",11,None,None,None,None,None,None),
+	(1,13,"GtkCustomSorter","sorter",11,None,None,None,None,None,None),
+	(1,14,"GtkLabel",None,8,None,None,None,2,None,None),
+	(1,15,"GtkEntry","entry",8,None,None,None,-1,None,None),
+	(1,16,"GtkButton",None,8,None,None,None,-1,None,None)
+  </object>
+  <object_property>
+	(1,1,"GtkWindow","default-height","120",None,None,None,None,None,None,None,None,None),
+	(1,1,"GtkWindow","default-width","400",None,None,None,None,None,None,None,None,None),
+	(1,1,"GtkWindow","title","pyt_gtk4_dropdown02",None,None,None,None,None,None,None,None,None),
+	(1,8,"GtkGrid","column-spacing","15",None,None,None,None,None,None,None,None,None),
+	(1,8,"GtkGrid","row-spacing","25",None,None,None,None,None,None,None,None,None),
+	(1,8,"GtkWidget","margin-bottom","20",None,None,None,None,None,None,None,None,None),
+	(1,8,"GtkWidget","margin-end","20",None,None,None,None,None,None,None,None,None),
+	(1,8,"GtkWidget","margin-start","20",None,None,None,None,None,None,None,None,None),
+	(1,8,"GtkWidget","margin-top","20",None,None,None,None,None,None,None,None,None),
+	(1,9,"GtkLabel","label","選択肢を\nGtk.StringListで作成",None,None,None,None,None,None,None,None,None),
+	(1,9,"GtkLabel","xalign","0.0",None,None,None,None,None,None,None,None,None),
+	(1,9,"GtkWidget","width-request","150",None,None,None,None,None,None,None,None,None),
+	(1,10,"GtkDropDown","model",None,None,None,None,None,11,None,None,None,None),
+	(1,10,"GtkWidget","hexpand","True",None,None,None,None,None,None,None,None,None),
+	(1,11,"GtkSortListModel","model",None,None,None,None,None,12,None,None,None,None),
+	(1,11,"GtkSortListModel","sorter",None,None,None,None,None,13,None,None,None,None),
+	(1,14,"GtkLabel","label","追加項目",None,None,None,None,None,None,None,None,None),
+	(1,14,"GtkLabel","xalign","0.0",None,None,None,None,None,None,None,None,None),
+	(1,14,"GtkWidget","width-request","150",None,None,None,None,None,None,None,None,None),
+	(1,16,"GtkButton","label","追加",None,None,None,None,None,None,None,None,None)
+  </object_property>
+  <object_layout_property>
+	(1,8,9,"GtkGridLayoutChild","row","1",None,None,None,None),
+	(1,8,10,"GtkGridLayoutChild","column","1",None,None,None,None),
+	(1,8,10,"GtkGridLayoutChild","column-span","2",None,None,None,None),
+	(1,8,10,"GtkGridLayoutChild","row","1",None,None,None,None),
+	(1,8,15,"GtkGridLayoutChild","column","1",None,None,None,None),
+	(1,8,16,"GtkGridLayoutChild","column","2",None,None,None,None)
+  </object_layout_property>
+  <object_signal>
+	(2,1,10,"GObject","notify","on_selected","selected",None,None,None,None),
+	(4,1,16,"GtkButton","clicked","on_button_clicked",None,None,None,None,None)
+  </object_signal>
+</cambalache-project>
